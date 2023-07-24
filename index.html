@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Huella de Carbono</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Huella de Carbono</h1>
+    <div class="input-section">
+      <label for="tipoCalculo">Selecciona el tipo de cálculo:</label>
+      <select id="tipoCalculo">
+        <option value="energia">Consumo de Energía (kWh)</option>
+        <option value="distancia">Distancia Recorrida (km)</option>
+      </select>
+      <input type="number" id="valor" step="0.01" placeholder="Ingresa el valor">
+      <button onclick="calcularHuella()">Calcular</button>
+    </div>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
